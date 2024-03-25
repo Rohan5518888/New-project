@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            max-width: 1600px  !important;
+           border: 2px solid yellow;
+        }
+        .hero-banner{
+            background: #000;
+            min-height: 800px;
+            align-items: center;
+            justify-content: center;
+        }
+        .col-1{
+            width: 100%;
+            max-width:711px !important;
+            border: 2px solid red;
+            height: 500px;
+        }
+        .col-2{
+            width: 100%;
+            max-width: 869px !important;
+        }
+        /* flex box */
+
+        .d-flex{
+            display: flex;
+        }
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .align-items-end{
+            align-items: end;
+        }
+        .justify-content-end{
+            justify-content: end;
+        }
+        .card{
+            width: 100%;
+            max-width: 401px !important;
+            min-height: 300px;
+            border: 1px solid green;
+        }
+        .gap-1{
+            display: flex;
+            gap: 10px   ;
+        }
+    </style>
+</head>
+<body>
+   <section class="hero-banner d-flex">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <div class="d-flex wrap align-items-end justify-content-end gap-1">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
